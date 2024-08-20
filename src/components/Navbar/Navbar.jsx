@@ -28,7 +28,7 @@ const Navbar = () => {
   const [count, setCounter] = useState(0);
   const dispatch = useDispatch();
 
-  
+
   const handleLogout = () => {
     dispatch(logoutUser(user?._id));
   };
@@ -201,7 +201,7 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <Button variant="outline" onClick={() => SingUp("/profile")}>
+            <Button variant="outline" onClick={() => SingUp("/login")}>
               Sign Up
             </Button>
           )}
