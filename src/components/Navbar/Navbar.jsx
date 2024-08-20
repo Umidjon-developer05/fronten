@@ -28,7 +28,6 @@ const Navbar = () => {
   const [count, setCounter] = useState(0);
   const dispatch = useDispatch();
 
-
   const handleLogout = () => {
     dispatch(logoutUser(user?._id));
   };
