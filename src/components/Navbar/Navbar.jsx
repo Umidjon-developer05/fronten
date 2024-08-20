@@ -35,6 +35,9 @@ const Navbar = () => {
   const OnNavigate = (path) => {
     navigate(path);
   };
+  const SingUp = (path) => {
+    navigate(path);
+  };
 
   return (
     <div>
@@ -197,7 +200,9 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <Button variant="outline">Sign Up</Button>
+            <Button variant="outline" onClick={() => SingUp("/profile")}>
+              Sign Up
+            </Button>
           )}
         </div>
       </header>
