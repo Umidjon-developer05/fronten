@@ -38,9 +38,10 @@ export const { setUser, clearUser } = userSlice.actions;
 
 export const logoutUser = (userId) => async (dispatch) => {
   try {
+    console.log(userId);
     if (userId) {
       const res = await axios.delete(
-        `http://localhost:8080/auth/get-one-delete/${userId}?secret_key=umidjon`
+        `https://backend-web-virid.vercel.app/auth/get-one-delete/${userId}?secret_key=umidjon`
       );
       if (res?.status === 200) {
         dispatch(clearUser());
